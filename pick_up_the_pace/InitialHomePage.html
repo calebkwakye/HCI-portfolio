@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initial Home Page (before signing in)</title>
+    <link rel="stylesheet" href="InitialHomePageStyles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<div id="NavBar" class="NavBar"><div class="logo">Pick Up <br> ‎ ‎ ‎ The Pace</div>
+    <ul class="NavSelector">
+        <li>Home</li>
+        <li>Settings</li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+</div>
+<body>
+    <div class="NavBarGap"></div>
+    <!-- Buttons at the top -->
+    <div class="buttons-container">
+        <a href="LoginFirst.html" class="button">Registered Events</a>
+        <a href="LoginFirst.html" class="button">Create Event</a>
+        <a href="LoginFirst.html" class="button">View Map</a>
+    </div>
+
+    <!-- Header and dropdown -->
+    <div class="event-feed">
+        <span class="event-feed-text">Event Feed:</span>
+        <div class="dropdown-container">
+            <button class="button dropdown-button">Sort By ▼</button>
+            <ul class="dropdown-menu">
+                <li>Event Date</li>
+                <li>Sport</li>
+                <li>Date Posted</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scrollable list of events -->
+    <div class="scrollable-events">
+        <div class="event">
+            <div class="event-title"><i class="fas fa-futbol"></i> Soccer Game</div>
+            <div class="event-info">
+                <span>📅 Date: November 25, 2024 | Time: 3:00 PM</span>
+                <span>📍 Location: IM Fields</span>
+            </div>
+            <div class="event-actions">
+                <a href="LoginFirst.html" class="event-button">Event Details</a>
+                <a href="LoginFirst.html" class="event-button">Join Event</a>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-title"><i class="fas fa-volleyball-ball"></i> Volleyball Match</div>
+            <div class="event-info">
+                <span>📅 Date: November 26, 2024 | Time: 5:00 PM</span>
+                <span>📍 Location: P Fields</span>
+            </div>
+            <div class="event-actions">
+                <a href="LoginFirst.html" class="event-button">Event Details</a>
+                <a href="LoginFirst.html" class="event-button">Join Event</a>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-title"><i class="fas fa-basketball-ball"></i> Basketball Pickup</div>
+            <div class="event-info">
+                <span>📅 Date: November 27, 2024 | Time: 7:00 PM</span>
+                <span>📍 Location: Weinstein Center</span>
+            </div>
+            <div class="event-actions">
+                <a href="LoginFirst.html" class="event-button">Event Details</a>
+                <a href="LoginFirst.html" class="event-button">Join Event</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // Redirect to "loginfirst.html" when screen is clicked
+    document.addEventListener('click', function (event) {
+        // Check if the clicked element is not Log In or Sign Up buttons
+        let isLoginSignup =
+            event.target.closest('a[href="login.html"]') ||
+            event.target.closest('a[href="signup.html"]');
+
+        if (!isLoginSignup) {
+            window.location.href = 'LoginFirst.html';
+        }
+    });
+</script>
+</html>
+
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Created Successfully</title>
+    <link rel="stylesheet" href="LoginFirstStyles.css">
+</head>
+<div id="NavBar" class="NavBar"><div class="logo">Pick Up <br> ‎ ‎ ‎ The Pace</div>
+    <ul class="NavSelector">
+        <li><a href="HomePage.html">Home</a></li>
+        <li>Settings</li>
+        <li>Profile</li>
+        <li><a href="InitialHomePage.html">Log Out</a></li>
+    </ul>
+</div>
+<body>
+    <div class="NavBarGap"></div>
+    <!-- Buttons at the top -->
+    <div class="buttons-container">
+        <a href="EventJoinedSuccessfully.html" class="button">Registered Events</a>
+        <a href="EventJoinedSuccessfully.html" class="button">Create Event</a>
+        <a href="EventJoinedSuccessfully.html" class="button">View Map</a>
+    </div>
+
+    <!-- Header and dropdown -->
+    <div class="event-feed">
+        <span class="event-feed-text">Event Feed:</span>
+        <div class="dropdown-container">
+            <button class="button dropdown-button">Sort By ▼</button>
+            <ul class="dropdown-menu">
+                <li>Event Date</li>
+                <li>Sport</li>
+                <li>Date Posted</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scrollable list of events -->
+    <div class="scrollable-events">
+        <!-- Soccer Event -->
+        <div class="event">
+            <div class="event-title">Soccer Game</div>
+            <div class="event-info">
+                <span>📅 Date: November 25, 2024 | Time: 3:00 PM</span>
+                <span>📍 Location: IM Fields</span>
+            </div>
+            <div class="event-actions">
+                <button class="event-button">Event Details</button>
+                <button class="event-button">Join Event</button>
+            </div>
+        </div>
+
+        <!-- Volleyball Event -->
+        <div class="event">
+            <div class="event-title">Volleyball Match</div>
+            <div class="event-info">
+                <span>📅 Date: November 26, 2024 | Time: 5:00 PM</span>
+                <span>📍 Location: P Fields</span>
+            </div>
+            <div class="event-actions">
+                <button class="event-button">Event Details</button>
+                <button class="event-button">Join Event</button>
+            </div>
+        </div>
+
+        <!-- Basketball Event -->
+        <div class="event">
+            <div class="event-title">Basketball Pickup</div>
+            <div class="event-info">
+                <span>📅 Date: November 27, 2024 | Time: 7:00 PM</span>
+                <span>📍 Location: Weinstein Center</span>
+            </div>
+            <div class="event-actions">
+                <button class="event-button">Event Details</button>
+                <button class="event-button">Join Event</button>
+            </div>
+        </div>
+    </div>
+    <!-- Log in first Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>Event Joined Successfully!</p>
+            <button onclick="goToHome()">OKAY</button>
+        </div>
+    </div>
+</body>
+<script>
+function goToHome() {
+    window.location.href = 'HomePage.html';
+        }
+</script>
+</html>
+
+
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a New Event</title>
+    <link rel="stylesheet" href="CreateEventStyles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  </head>
+  <div id="NavBar" class="NavBar"><div class="logo">Pick Up <br> ‎ ‎ ‎ The Pace</div>
+    <ul class="NavSelector">
+        <li><a href="HomePage.html">Home</a></li>  
+        <li>Settings</li>
+        <li>Profile</li>
+        <li><a href="InitialHomePage.html">Log Out</a></li>
+    </ul>
+</div>
+  <body>
+    <div class="form-container">
+      <h1>CREATE A NEW EVENT</h1>
+      <p>*These fields are required</p>
+      <form>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">*Name:</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="location">*Location:</label>
+            <input type="text" id="location" required />
+          </div>
+          <div class="form-group">
+            <label for="sport">*Sport:</label>
+            <input type="text" id="sport" required />
+          </div>
+
+          <div class="form-group">
+            <label for="players">*Number of Players:</label>
+            <div class="player-controls">
+              <button
+                type="button"
+                class="minus-button"
+                onclick="decrementPlayers()"
+              >
+                -
+              </button>
+              <input
+                type="number"
+                id="players"
+                value="0"
+                min="0"
+                onchange="handlePlayerChange()"
+              />
+              <button
+                type="button"
+                class="plus-button"
+                onclick="incrementPlayers()"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="date">*Date:</label>
+            <input type="date" id="date" required />
+          </div>
+          <div class="form-group">
+            <label for="skill">*Skill level:</label>
+            <input type="text" id="skill" required />
+          </div>
+          <div class="form-group">
+            <label for="time">*Time:</label>
+            <input type="time" id="time" required />
+          </div>
+          <div class="form-group">
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions"></textarea>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <a href="HomePage.html" class="cancel-button">Cancel</a>
+          <a href="EventCreatedSuccessfully.html" class="create-button">Create Event</a>
+        </div>
+      </form>
+    </div>
+    <script src="playerScript.js"></script>
+  </body>
+</html>

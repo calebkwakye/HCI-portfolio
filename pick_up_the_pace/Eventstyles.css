@@ -1,0 +1,120 @@
+.NavBar {
+    color: white;
+    background-color: black;
+    width: 100%; 
+    margin: 0;
+    padding: 2vh 4vw; 
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.7vw; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    box-sizing: border-box; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavSelector {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.NavSelector li {
+    display: inline-block;
+}
+
+.NavSelector li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem
+}
+
+.NavSelector li a:hover {
+    background-color: gray; 
+    border-radius: 5px;
+}
+
+.logo {
+    margin-right: 2rem;
+}
+
+/* padding-top: 6.3rem; optimal padding for keeping contents under the navBar */
+.NavBarGap{
+    padding-top: 6.3rem;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.backgroundImage{
+    width: 65%;
+    padding: 2vh 15vw;
+    z-index: 1;
+    position: relative; 
+    border-radius: 2rem;
+}
+
+.whiteBox{
+    border-radius: 2rem;
+    background-color: white;
+    opacity: 90%;
+    z-index: 2;
+    position: absolute;
+    padding: 2rem;
+    top: 40%; 
+    right: 25%; 
+    width: 30%; 
+}
+
+.eventTitle{
+    font-weight: bold;
+    font-size: 1.7vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.location{
+    font-weight: bold;
+    font-size: 1.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(135, 135, 135);
+    margin-top: 4%;
+}
+
+.time{
+    font-size: 1.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 2%;
+}
+
+.description{
+    font-size: 1vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 2%;
+    padding-bottom: 1rem
+}
+
+.join{
+    margin-top: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 1.5rem;
+    width: 30%;
+    padding: 1vh 2vw;
+    font-size: 1.2vw;
+    margin-left: 34%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.join:hover {
+    text-decoration: underline;
+}

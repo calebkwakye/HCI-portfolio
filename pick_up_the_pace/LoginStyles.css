@@ -1,0 +1,155 @@
+.NavBar {
+    color: white;
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 2vh 4vw;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.7vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavSelector {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.NavSelector li {
+    display: inline-block;
+}
+
+.NavSelector li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+}
+
+.NavSelector li a:hover {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.logo {
+    margin-right: 2rem;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: avenir, sans-serif;
+}
+
+.NavBarGap {
+    padding-top: 6.3rem;
+}
+
+input, textarea, a {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: white;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.login-message {
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 1.5rem;
+}
+
+.login-field {
+    margin-bottom: 1.5rem;
+}
+
+.login-field label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-button, .login-button {
+    display: inline-block;
+    width: 46%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.cancel-button {
+    background-color: black;
+}
+
+.cancel-button:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    background-color: black;
+}
+
+.login-button:hover {
+    text-decoration: underline;
+}
+
+.new-user-button {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.signup-link {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="HomePageStyles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="NavBar" class="NavBar">
+        <div class="logo">Pick Up <br> ‎ ‎ ‎ The Pace</div>
+        <ul class="NavSelector">
+            <li><a href="HomePage.html">Home</a></li>
+            <li>Settings</li>
+            <li>Profile</li>
+            <li><a href="InitialHomePage.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    <div class="NavBarGap"></div>
+    <!-- Buttons at the top -->
+    <div class="buttons-container">
+        <a href="RegisteredEvents.html" class="button">Registered Events</a>
+        <a href="CreateEvent.html" class="button">Create Event</a>
+        <a href="MapPage.html" class="button">View Map</a>
+    </div>
+
+    <!-- Header and dropdown -->
+    <div class="event-feed">
+        <span class="event-feed-text">Event Feed:</span>
+        <div class="dropdown-container">
+            <button class="button dropdown-button">Sort By ▼</button>
+            <ul class="dropdown-menu">
+                <li>Event Date</li>
+                <li>Sport</li>
+                <li>Date Posted</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- List of events -->
+    <div class="scrollable-events">
+        <div class="event">
+            <div class="event-title"><i class="fas fa-futbol"></i> Soccer Game</div>
+            <div class="event-info">
+                <span>📅 Date: November 25, 2024 | Time: 3:00 PM</span>
+                <span>📍 Location: IM Fields</span>
+            </div>
+            <div class="event-actions">
+                <a href="EventPage.html" class="event-button">Event Details</a>
+                <a href="EventJoinedSuccessfully.html" class="event-button">Join Event</a>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-title"><i class="fas fa-volleyball-ball"></i> Volleyball Match</div>
+            <div class="event-info">
+                <span>📅 Date: November 26, 2024 | Time: 5:00 PM</span>
+                <span>📍 Location: P Fields</span>
+            </div>
+            <div class="event-actions">
+                <a href="volleyballEvent.html" class="event-button">Event Details</a>
+                <a href="EventJoinedSuccessfully.html" class="event-button">Join Event</a>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-title"><i class="fas fa-basketball-ball"></i> Basketball Pickup</div>
+            <div class="event-info">
+                <span>📅 Date: November 27, 2024 | Time: 7:00 PM</span>
+                <span>📍 Location: Weinstein Center</span>
+            </div>
+            <div class="event-actions">
+                <a href="basketballEvent.html" class="event-button">Event Details</a>
+                <a href="EventJoinedSuccessfully.html" class="event-button">Join Event</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
