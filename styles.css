@@ -1,42 +1,4 @@
   
-  /* Main Content */
-  .main-content {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  
-  /* Footer Styles */
-  footer {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    text-align: center;
-  }
-
-
-.intro-text {
-  flex: 1;
-}
-.intro-text h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-.intro-text p {
-  font-size: 1.2rem;
-}
-.profile-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.profile-image img {
-  max-width: 65%;
-  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); */
-}
-
 /* General Styles */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -45,19 +7,45 @@ body {
   color: #333;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the body stretches to the full viewport height */
+  min-height: 100vh; 
 }
 
+/* Main Content */
+.main-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+}
+
+.profile-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image img {
+  max-width: 65%;
+}
 
 section {
   text-align: center;
-  /* padding-bottom: 1rem; */
 }
 
 #about, #skills, #projects{
   padding: 4rem 2rem;
-
-
 }
 
 h2 {
@@ -65,6 +53,16 @@ h2 {
   margin-bottom: 1rem;
   color: #0022aa;
   text-decoration-color: #0022aa;
+}
+
+.school-image-container {
+  text-align: center; 
+  margin-top: 4rem; 
+}
+
+.school-image {
+  max-width: 30rem; 
+  width: 100%; 
 }
 
 /* Navigation Bar */
@@ -80,16 +78,18 @@ nav {
   width: 100%;
   z-index: 1000;
 }
+
 nav .logo {
   font-size: 1.5rem;
-  /* font-weight: bold; */
   margin-left: 3rem;
 }
+
 nav .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
+
 nav .nav-links li a {
   color: white;
   text-decoration: none;
@@ -114,6 +114,7 @@ nav .nav-links li a:hover {
   color: white;
   margin-top: 1.2rem;
 }
+
 .landing .intro-text h1 {
   font-size: 8rem;
 }
@@ -121,8 +122,8 @@ nav .nav-links li a:hover {
 /* Section Styling */
 .section {
   background-color: #f4f4f9;
-  /* color: #333; */
 }
+
 .section-content {
   max-width: 800px;
   margin: 0 auto;
@@ -145,6 +146,7 @@ nav .nav-links li a:hover {
   gap: 2rem;
   margin-top: 2rem;
 }
+
 .project-card {
   border: 1px solid #ddd;
   padding: 1.5rem;
@@ -153,13 +155,16 @@ nav .nav-links li a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 300px;
 }
+
 .project-card h3 {
   color: #2A3B47;;
 }
+
 .project-card a {
   color: #0022aa;
   text-decoration: none;
 }
+
 .project-card a:hover {
   text-decoration: underline;
 }
@@ -178,19 +183,11 @@ footer {
   background-color: #2A3B47;
   color: white;
   text-align: center;
-  /* padding: 1rem 0; */
   position: relative;
   bottom: 0;
   width: 100%;
   margin-top: auto;
+  padding: 1rem;
+
 }
 
-.school-image-container {
-  text-align: center; 
-  margin-top: 4rem; 
-}
-
-.school-image {
-  max-width: 30rem; 
-  width: 100%; 
-}
